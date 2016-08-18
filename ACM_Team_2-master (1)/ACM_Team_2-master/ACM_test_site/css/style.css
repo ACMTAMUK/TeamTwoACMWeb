@@ -4,16 +4,23 @@
     width:100%;     
     height:100%;  
 }
-a:visited{
-color:white;
-text-decoration: underline;
-}
 .learn_more:link, .learn_more:visited {
     text-align: center;	
     text-decoration: none;
     display: inline-block;
 }
+a{
+	text-decoration:none;
+	color:#ffffff;
+}
+a:visited{
+color:#5b6fe0;
+text-decoration: underline;
+}
 
+h4{
+	font-size:xx-large;
+}
 .learn_more:hover, .learn_more:active {
     background-color: #5b6fe0;
     color: white;
@@ -31,33 +38,54 @@ text-decoration: underline;
    display:flex;
    background:#ffffff;
    border-right:none;
+      -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
     }
-.search_bar:link, .search_bar:visited {
+#search_bar:link, #search_bar:visited {
     text-align: center;	
     text-decoration: none;
     display: inline-block;
 }
 
-.search_bar:hover, .search_bar:active {
-    background-color: #5b6fe0;
-    color: white;
-}
-.search_bar{
+#search_bar{
 	z-index:9999999;
    position: fixed; 
    border-top-left-radius:10px;
    border-bottom-left-radius:10px;
-   right:0px; 
+   right:-271px; 
    padding-left:4px;
    bottom:42px;
    min-width:92.05px;
+   width:362.05px;
    font-size:large;
    border: 3px #3d4a96 solid;
    display:flex;
    background:#ffffff;
    border-right:none;
+    -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
     }
-
+#search_bar:hover, #search_bar:active {
+    text-color:black;
+    background-color: #5b6fe0;
+    right: 0px;
+}
+  
+#search_bar_hidden{
+    z-index:9999999;
+    bottom:42px;
+	left: -25px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+}
 
 a:link{
 color:#ffffff;
@@ -75,6 +103,11 @@ text-decoration: none;
     position: relative;
     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
+td:hover, td:active {
+    background-color: #5b6fe0;
+
+}
+
 td:link, td:visited {
     background-color: #f44336;
     color: white;
@@ -92,10 +125,6 @@ td:link, td:visited {
 	margin-bottom: 0;
 }
 
-td:hover, td:active {
-    background-color: #5b6fe0;
-
-}
 .wrapper {
     width:960px;
     height:200px;
